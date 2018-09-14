@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#98AED7"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:arrowTint="@color/light_gray"
+                app:textTint="#000"
+
+                app:dropDownListPaddingBottom="60dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"/>
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:arrowTint="@color/light_gray"
+                app:textTint="#000"
+                app:dropDownListPaddingBottom="60dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:theme="@style/MyEditText2"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:hint="请输入病人信息"
+                />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_weight="0.9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_searching"
+                android:textColor="#ffffff"
+                android:text="搜索"
+                android:background="#55b683"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="#edb3afaf"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="病床号"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    />
+                <View
+                    android:layout_width="1.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#B4B3B3"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="姓名"
+                    />
+                <View
+                    android:layout_width="1.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#B4B3B3"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="流速(ml/min)"
+                    android:textSize="20sp"
+
+                    />
+                <View
+                    android:layout_width="1.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#B4B3B3"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="剩余(ml)"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+            <ListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minHeight="20dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btn_1_D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#98AED7"
+                    android:textSize="18sp"
+                    android:text="查询" />
+
+                <Button
+                    android:id="@+id/btn_2_D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#98AED7"
+                    android:textSize="18sp"
+                    android:text="设置" />
+
+                <Button
+                    android:id="@+id/btn_3_D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#98AED7"
+                    android:textSize="18sp"
+                    android:text="详情" />
+
+                <Button
+                    android:id="@+id/btn_4_D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#80c6fd"
+                    android:textSize="18sp"
+                    android:text="用户中心" />
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
+
+
+

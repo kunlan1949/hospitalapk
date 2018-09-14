@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dommy">
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:requiresSmallestWidthDp="600"
+        android:smallScreens="false"
+
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hospital"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/hospital"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Help.Help"
+            android:screenOrientation="landscape"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Logo.Logo"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Person.Person"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Mannager"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Searching"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".IllsHouse"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Setting"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Person.Add"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".xiangqing.Speed"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".xiangqing.Temperature"
+            android:screenOrientation="landscape"/>
+    </application>
+
+</manifest>
